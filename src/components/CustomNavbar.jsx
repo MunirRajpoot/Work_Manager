@@ -5,20 +5,20 @@ import React from 'react'
 const CustomNavbar = () => {
   return (
     <>
-    <nav className="bg-blue-600 h-14 py-2 px-4 flex justify-between items-center">
+      <nav className="bg-blue-600 h-14 py-2 px-4 flex justify-between items-center">
         <div className='brand'>
-<h1 className='text-xl font-semibold'><a href="#">Work Manager</a></h1>
+          <h1 className='text-xl font-semibold'><a href="#">Work Manager</a></h1>
         </div>
         <div>
           <ul className='flex space-x-8'>
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"} className='hover:text-blue-100'>Home</Link>
             </li>
             <li>
-              <a href="#">Add Task</a>
+              <Link href={"/add-task"} className='hover:text-blue-100'>Add Task</Link>
             </li>
             <li>
-              <a href="#">Show Task</a>
+           <Link href={"/show-tasks"} className='hover:text-blue-100'>Show Tasks</Link>
             </li>
           </ul>
         </div>
@@ -32,7 +32,7 @@ const CustomNavbar = () => {
             </li>
           </ul>
         </div>
-    </nav>
+      </nav>
     </>
   )
 }
